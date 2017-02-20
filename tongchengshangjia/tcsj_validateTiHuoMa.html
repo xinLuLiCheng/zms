@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="tcsj_validateTiHuoMaBox">
+    <div class="tcsj_validate">
+        <img src="../images/icon-img/icon_edit_yzm.png" alt=""/>
+        <div>
+            <input type="text" class="tcsj-thm" placeholder="输入提货码"/>
+        </div>
+        <button class="btn mo-click">确认</button>
+    </div>
+</div>
+<div class="tcsj_validatSaoMa">
+    <img src="../images/icon-img/icon_click_sys.png" alt=""/>
+</div>
+<div class="tcsj_tuiJianCityGroup clearfloat">
+    <div class="col-xs-12 tcsj_tuiJianTT clearfloat">
+         <div class="col-xs-8 tcsj_tuiJianTTLeft">
+             城市团商品名称
+         </div>
+        <div class=" col-xs-4 tcsj_tuiJianTTRight">
+            库存
+        </div>
+    </div>
+    <div class="col-xs-12 tcsj_tuiJianItem clearfloat">
+        <div class="col-xs-8 tcsj_tuiJianItemLeft">
+            孩之宝Hasbro培乐多彩泥橡皮泥8色装（海外版）
+            孩之宝Hasbro培乐多彩泥橡皮泥8色装（海外版）
+        </div>
+        <div class="col-xs-4 tcsj_tuiJianItemRight">
+             12365
+        </div>
+    </div>
+    <div class="col-xs-12 tcsj_tuiJianItem clearfloat">
+        <div class="col-xs-8 tcsj_tuiJianItemLeft">
+            孩之宝Hasbro培乐多彩泥橡皮泥8色装（海外版）
+            孩之宝Hasbro培乐多彩泥橡皮泥8色装（海外版）
+        </div>
+        <div class="col-xs-4 tcsj_tuiJianItemRight">
+            522
+        </div>
+    </div>
+    <div class="col-xs-12 tcsj_tuiJianMore">
+        更多
+        <i class="icon iconfont">&#xe66a;</i>
+    </div>
+</div>
+<!--弹窗-->
+<div class="grey"></div>
+<div class="tcsj_tuiJianDialog">
+    <div class="tcsj_tuiJianDialogMain">
+        <div class="tcsj_tuiJianDialogContent">
+            <div class="tcsj_tuiJianDialogContent_1">
+                <div class="imgBox">
+                    <img src="../images/img/cart-img3.png" alt=""/>
+                </div>
+                <div class="tcsj_tuiJianDialogDemo">
+                    <div class="tcsj_tuiJianDialogDemo_1">
+                        <div class="tcsj_tuiJianDialogDemo_11">
+                            【彩泥乐园】迪士尼3d彩泥大厨机加公主雪糕机模具套装无毒橡皮支吃无理由退货
+                        </div>
+                        <div class="tcsj_tuiJianDialogDemo_12">
+                            <i class="icon iconfont">&#xe610;</i>
+                        </div>
+                    </div>
+                    <div class="tcsj_tuiJianDialogDemo_2">
+                        <span class="fh">￥</span><span class="num">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tcsj_tuiJianDialogContent_2 clearfloat">
+                <div class="col-xs-12 item clearfloat">
+                    <div class="col-xs-4">
+                        订单号:
+                    </div>
+                    <div class="col-xs-8">
+                        12365298742135926
+                    </div>
+                </div>
+                <div class="col-xs-12 item clearfloat">
+                    <div class="col-xs-4">
+                        待付款时间:
+                    </div>
+                    <div class="col-xs-8">
+                        2016-09-03  17:27
+                    </div>
+                </div>
+                <div class="col-xs-12 item clearfloat">
+                    <div class="col-xs-4">
+                        预约手机号:
+                    </div>
+                    <div class="col-xs-8">
+                        15326487951
+                    </div>
+                </div>
+                <div class="col-xs-12 item clearfloat">
+                    <div class="col-xs-4">
+                        购买数量:
+                    </div>
+                    <div class="col-xs-8">
+                        2
+                    </div>
+                </div>
+                <div class="col-xs-12 item clearfloat">
+                    <div class="col-xs-4">
+                        总价:
+                    </div>
+                    <div class="col-xs-8">
+                        ￥88
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tcsj_tuiJianDialogOpration clearfloat">
+            <div class="btn-qxjy left">取消交易</div>
+            <div class="btn-qrjy left">确认交易</div>
+        </div>
+    </div>
+</div>
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    $(function(){
+        $(".mo-click").on("click",function(){//弹出框
+            $(".grey").show();
+            $(".tcsj_tuiJianDialog").show();
+        });
+        $(".grey").on("click",function(){//取消交易
+            $(this).hide();
+            $(".tcsj_tuiJianDialog").hide();
+        });
+        $(".btn-qxjy").on("click",function(){//取消交易
+            $(".grey").hide();
+            $(".tcsj_tuiJianDialog").hide();
+        });
+        $(".btn-qrjy").on("click",function(){//确认交易
+            alert("我要发生什么");
+        });
+
+    });
+</script>
+</body>
+</html>

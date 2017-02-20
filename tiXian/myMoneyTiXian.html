@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<section class="myMoneyTiXianBox">
+    <div class="myMoney_keTiXian">
+        <label>可提现余额</label><span class="num">20.00</span>元
+    </div>
+</section>
+<section class="myMoneyTiXianBox">
+    <div class="myMoneyTiXianBackCard">
+        <div class="bankMark">
+            <img src="../images/img/bind-jsyh.png" alt=""/>
+        </div>
+        <div class="name">
+            <div>
+                建设银行  储蓄卡
+            </div>
+            <div>
+                尾号  8964
+            </div>
+        </div>
+        <div class="more">
+            <i class="icon iconfont">&#xe610;</i>
+        </div>
+    </div>
+</section>
+<section class="myMoneyTiXianBox">
+    <div class="myMoney_keTiXian">
+        <label for="money">金额</label><input id="money" type="text" maxlength="10" placeholder="请输入提现金额"/>
+    </div>
+</section>
+<div class="bottomConfirmBox">
+    <div class="bottomConfirm c_bottomConfirm">
+        下一步
+    </div>
+</div>
+<div class="myMoneyTiXianNotice">
+    转出金额超过余额
+</div>
+<div class="grey"></div>
+<div class="zhiMaTree_keyBoard">
+    <div class="zhiMaTree_keyBoardHeader">
+        <div class="zhiMaTree_keyBoarTitle">
+            输入支付密码
+        </div>
+        <i class="icon iconfont">&#xe62c;</i>
+        <div class="zhiMaTree_pswBox">
+            <span></span><span></span><span> </span><span></span><span></span><span></span>
+        </div>
+    </div>
+    <div class="zhiMaTree_keyBoardMain">
+        <div class="zhiMaTree_keyBoarName">
+            <img src="../images/img/icon_security.png" alt=""/>
+            知妈树安全键盘
+        </div>
+        <div class="zhiMaTree_keyBoardMa clearfloat">
+            <div class="col-xs-12 clearfloat">
+                <div class="col-xs-4 kCode">1</div>
+                <div class="col-xs-4 kCode">2</div>
+                <div class="col-xs-4 kCode">3</div>
+            </div>
+            <div class="col-xs-12 clearfloat">
+                <div class="col-xs-4 kCode">4</div>
+                <div class="col-xs-4 kCode">5</div>
+                <div class="col-xs-4 kCode">6</div>
+            </div>
+            <div class="col-xs-12 clearfloat">
+                <div class="col-xs-4 kCode">7</div>
+                <div class="col-xs-4 kCode">8</div>
+                <div class="col-xs-4 kCode">9</div>
+            </div>
+            <div class="col-xs-12 clearfloat">
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4 kCode">0</div>
+                <div class="col-xs-4">
+                    <img src="../images/img/input-del.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="myMoneyTiXianSelectBankCard">
+    <div class="zhiMaTree_keyBoardHeader">
+        <div class="zhiMaTree_keyBoarTitle">
+            选择银行卡
+        </div>
+        <i class="icon iconfont">&#xe62c;</i>
+    </div>
+    <div class="myMoneySelectBankCardMain">
+        <div class="myMoneyTiXianRule">
+            本次交易仅支持储蓄卡
+        </div>
+        <div class="myMoneySelectBankCard">
+            <div class="bankCardMark">
+                <img src="../images/img/bind-jsyh.png" alt=""/>
+            </div>
+            <div class="bandCardName">
+                <div>建设银行  储蓄卡  尾号  8964</div>
+                <div>
+                    单次限额2000元
+                </div>
+            </div>
+            <div class="zhuangTai">
+                <div class="select t_ckbox"></div>
+            </div>
+        </div>
+        <div class="myMoneyAddBankCard">
+            <a href="#">
+                <img src="../images/icon-img/icon_add.png" alt=""/>
+                <span>添加银行卡</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    $(function(){
+//        判断输入的金额为数字
+        var y_money;//原有金额
+        var t_money;//提现金额
+//        var num= 9.991111;
+//        alert(num.toFixed(2));
+        $('#money').keyup(function(){
+//            /^[0-9]+([.]{1}[0-9]{1,2})?$/
+            if(!/^\d+(\.\d+)?$/.test($(this).val()))
+            {
+                $(this).val("");
+            }
+
+        });
+        $(".bottomConfirmBox").on("click",function(){
+            y_money = parseFloat($(".myMoney_keTiXian span.num").text());
+            t_money = parseFloat($('#money').val());
+            console.log(typeof(y_money)+":"+ typeof(t_money));
+            if(y_money<t_money){
+                $(".myMoneyTiXianNotice").show();
+            }else{
+                return false;
+            }
+        });
+        $(".myMoneyTiXianNotice").click(function(){
+            $(this).hide();
+        });
+        $(".zhiMaTree_keyBoardHeader i.iconfont").on("click",function(){
+            $(".grey").hide();
+            $(".zhiMaTree_keyBoard").hide();
+        });
+        $(".grey").on("click",function(){
+            $(this).hide();
+            $(".zhiMaTree_keyBoard").hide();
+        });
+//        $(".grey").show();
+
+
+
+
+
+
+
+
+//        zhimaTree安全键盘
+        var $psw;//键盘数字即密码
+        var $empty = null;//填写密码的位置
+        var $emptyIndex = 0;
+        $(".kCode").on("click",function(){
+            $psw = $(this).text();
+            $empty = $(".zhiMaTree_pswBox span").eq($emptyIndex);
+            if($emptyIndex<6){
+//                alert($psw);
+                $empty.text($psw);
+            }else{
+              return false;
+            }
+            $emptyIndex++;
+        });
+
+    });
+</script>
+</body>
+</html>

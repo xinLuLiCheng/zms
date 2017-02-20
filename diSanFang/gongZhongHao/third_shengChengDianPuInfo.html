@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<div class="labInputBox_box">
+    <div class="labInputBox">
+        <div>
+            <label for="gzh">公众号</label>
+        </div>
+        <div>
+            <input type="text" id="gzh" placeholder="请您输入公众号名称"/>
+        </div>
+    </div>
+</div>
+<div class="labInputBox_box">
+    <div class="labInputBox">
+        <div>
+            <label for="wxh">微信号</label>
+        </div>
+        <div>
+            <input type="text" id="wxh" placeholder="请您输入微信号"/>
+        </div>
+    </div>
+</div>
+<div class="labInputBox_box">
+    <div class="labInputBox">
+        <div>
+            <label for="phone">手机号</label>
+        </div>
+        <div>
+            <input type="text" id="phone" placeholder="请您输入手机号码"/>
+        </div>
+    </div>
+    <div class="phone_yzm">
+         <div class="phone_yzmBox">
+             <div>
+                 <label for="yzm">验证码</label>
+             </div>
+             <div>
+                 <input type="text" id="yzm" placeholder="请您输入手机号码"/>
+             </div>
+         </div>
+         <div class="yzm_transfer">
+             <span class="btn_yzm">获取验证码</span>
+         </div>
+    </div>
+</div>
+<footer class="btn_footer">
+    <a href="#">生成店铺</a>
+</footer>
+<!--引入JS文件-->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/font.js"></script>
+<script>
+    $(function(){
+        var $ss=60;
+        var setT;
+       $(".btn_yzm").on("click",function(){
+           clearInterval(setT);
+           $ss=60;
+           $(this).text("重新发送"+$ss+"s");
+           setT = setInterval(yzm_time,1000);
+       });
+        function yzm_time(){
+            $ss--;
+            $(".btn_yzm").text("重新发送"+$ss+"s");
+            if($ss<=0){
+                clearInterval(setT);
+                $(".btn_yzm").text("重新获取验证码");
+            }
+        };
+    })
+</script>
+</body>
+</html>

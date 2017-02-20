@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<article class="shangjiaxinxi">
+    <div class="nameMoreBox">
+        <div class="name">门店首图</div>
+        <div class="more">
+            <div class="logoImg">
+                <img src="../../images/img/icon-zsn.png" alt=""/>
+            </div>
+            <i class="icon iconfont">&#xe610;</i>
+        </div>
+    </div>
+    <a href="businInfo_inputBusinName.html">
+        <div class="nameMoreBox">
+            <div class="name">商家名称</div>
+            <div class="more">
+                编辑商家名称
+                <i class="icon iconfont">&#xe610;</i>
+            </div>
+        </div>
+    </a>
+    <a href="businInfo_inputBusinPhone.html">
+        <div class="nameMoreBox">
+            <div class="name">商家电话</div>
+            <div class="more">
+                编辑商家电话<i class="icon iconfont">&#xe610;</i>
+            </div>
+        </div>
+    </a>
+    <a href="businInfo_dianPuAddress.html">
+        <div class="nameMoreBox">
+            <div class="name">商家地址</div>
+            <div class="more">
+                编辑商家地址<i class="icon iconfont">&#xe610;</i>
+            </div>
+        </div>
+    </a>
+    <a href="businInfo_inputYingYeShiJia.html">
+        <div class="nameMoreBox">
+            <div class="name">营业时间</div>
+            <div class="more">
+                编辑营业时间<i class="icon iconfont">&#xe610;</i>
+            </div>
+        </div>
+    </a>
+    <a href="businInfo_menDianYouHuiHuoDong.html">
+        <div class="nameMoreBox borderNone">
+            <div class="name">门店优惠活动</div>
+            <div class="more">
+                <i class="icon iconfont">&#xe610;</i>
+            </div>
+        </div>
+    </a>
+</article>
+<div class="grey"></div>
+<div class="businInfoDialog">
+    <div class="select_xj">相机</div>
+    <div class="select_xc">相册</div>
+    <div class="businInfo_cancel">取消</div>
+</div>
+<!--引入JS文件-->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/font.js"></script>
+<script>
+    $(function(){
+        $(".shangjiaxinxi>div.nameMoreBox:first-child").on("click",function(){
+            $(".grey").show();
+            $(".businInfoDialog").show();
+        });
+        $(".businInfo_cancel").on("click",function(){
+            $(".grey").hide();
+            $(".businInfoDialog").hide();
+        });
+        $(".grey").on("click",function(){
+            $(this).hide();
+            $(".businInfoDialog").hide();
+        })
+    })
+</script>
+</body>
+</html>

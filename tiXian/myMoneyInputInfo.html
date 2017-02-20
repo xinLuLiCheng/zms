@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="validateBankCardProgressBox">
+    <div class="validateBankCardProgress">
+         <div class="prog active">1</div>
+         <div class="prog">2</div>
+         <div class="prog">3</div>
+         <div class="line"></div>
+         <div class="line"></div>
+        <div class="name named">输入卡号</div>
+        <div class="name">银行验证信息</div>
+        <div class="name">验证码</div>
+    </div>
+</div>
+<div class="labInputBox_box">
+    <div class="labInputBox bb">
+        <div>
+            <label for="xm">姓名</label>
+        </div>
+        <div>
+            <input type="text" id="xm" placeholder="请输入您的姓名"/>
+        </div>
+    </div>
+    <div class="labInputBox">
+        <div>
+            <label for="kh">卡号</label>
+        </div>
+        <div>
+            <input type="text" id="kh" placeholder="请输入您的银行卡号"/>
+        </div>
+    </div>
+</div>
+<div class="validateAgreement">
+    <div class="select t_ckbox"></div>
+    <span>阅读并同意《知妈树用户协议》</span>
+</div>
+<div class="bottomConfirmBox">
+    <div class="bottomConfirm c_bottomConfirm">
+        下一步
+    </div>
+</div>
+<div class="validateNotice">
+    无法识别该银行卡，请检查卡号输入是否正确
+</div>
+
+
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+</body>
+</html>

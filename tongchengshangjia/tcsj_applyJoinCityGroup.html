@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="title">
+    门店
+</div>
+<div class="inputBox">
+    <input type="text" class="dname" placeholder="输入门店名称"/>
+</div>
+<div class="title">
+    申请人
+</div>
+<div class="inputBox">
+    <input type="text" class="uname" placeholder="输入申请人姓名"/>
+</div>
+<div class="title">
+    联系电话
+</div>
+<div class="inputBox">
+    <input type="text" class="phone" placeholder="输入联系电话"/>
+</div>
+<div class="btnSaveBox">
+    <button class="btn btnSave">保存</button>
+</div>
+<div class="tcsj_CityGroupBenefit">
+    <div>
+        参与城市团，您可以收获
+    </div>
+    <div>
+        1.为您的门店带来更多潜在客户
+    </div>
+    <div>
+        2.给您的门店带来更广的认识度
+    </div>
+    <div>
+        3.给您带来高返利
+    </div>
+    <div>
+        4.***************
+    </div>
+    <div>
+        5.***************
+    </div>
+</div>
+<div class="grey"></div>
+<div class="tcsj_CityGroupBenefitDialog">
+    <div class="content">
+        请保持电话畅通，稍后会有知妈树工作人员与您联系
+    </div>
+    <div class="zhiDaoLe">
+        我知道了
+    </div>
+</div>
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    $(function(){
+        $(".btnSave").on("click",function(){
+            $(".grey").show();
+            $(".tcsj_CityGroupBenefitDialog").show();
+        });
+        $(".zhiDaoLe").on("click",function(){
+            $(".grey").hide();
+            $(".tcsj_CityGroupBenefitDialog").hide();
+        });
+        $(".grey").on("click",function(){
+            $(this).hide();
+            $(".tcsj_CityGroupBenefitDialog").hide();
+        });
+    })
+</script>
+</body>
+</html>

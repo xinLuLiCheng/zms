@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="../js/font.js"></script>
+</head>
+<body>
+<!--nav-->
+<div class="shop-detail1-header bb ctn">
+    <div class="col-xs-4 p0"><a href="#" class="active">商品</a></div>
+    <div class="col-xs-4 p0"><a href="#">详情</a></div>
+    <div class="col-xs-4 p0"><a href="#">评价</a></div>
+    <div class="clear"></div>
+</div>
+<div class="empty-top"></div>
+<div id="shop-detail-swiper" class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <!--banner-->
+            <div id="shop-detail-banner" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/img/shop-banner1.jpg" style="width:100%;"alt="图片加载"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/img/shop-banner1.jpg" style="width:100%;" alt="图片加载"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/img/shop-banner1.jpg" style="width:100%;" alt="图片加载"/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/img/shop-banner1.jpg" style="width:100%;" alt="图片加载"/>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="shop-detail-demo bgf p10">
+                <div class="bb">
+                    <div class="col-xs-9 p0">
+                        <span class="cmain">￥24.50</span>
+                        <del>￥39.00</del>
+                        <span id="grasp-share">品牌返利</span>
+                    </div>
+                    <div class="col-xs-3 p0">
+                        <span id="add-view" class="view"></span>
+                        <span id="transmit"></span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bb">
+                    <div class="col-xs-9 pr5">
+                        <p><a href="#">【哈啰宝贝】春秋新款女童纯色百搭帆布鞋可爱蝴蝶结单鞋</a></p>
+                    </div>
+                    <div class="col-xs-3 p0">
+                        <p class="ctn">累计销量</p>
+                        <p class="ctn">1152件</p>
+                    </div>
+                    <div class="col-xs-4 shop-detail-mark mt5 p0">
+                        <i class="icon iconfont">&#xe637;</i>
+                        正品保证
+                    </div>
+                    <div class="col-xs-4 shop-detail-mark mt5 p0 ctn">
+                        <i class="icon iconfont">&#xe637;</i>
+                        极速退款
+                    </div>
+                    <div class="col-xs-4 shop-detail-mark mt5 p0 tr">
+                        <i class="icon iconfont">&#xe637;</i>
+                        7天退款
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bb">
+                    <p class="shop-title">促销</p>
+                    <div class="shop-fl">
+                        <span class="sm_mark">返利</span>
+                        <span>返 <span class="s">13.99</span>|约 <span class="s">12%</span>|确认收货七天内返现</span>
+                    </div>
+                    <div class="shop-yf">
+                        <span class="sm_mark">邮费</span>
+                        <span>店铺满 69 包邮</span>
+                    </div>
+                </div>
+                <div class="shop-detail-rule">
+                    <div class="col-xs-10 p0">
+                        <p class="shop-title">商品规格</p>
+                        <span>请选择商品颜色，尺码</span>
+                    </div>
+                    <div class="col-xs-2 p0">
+                        <a href="javascript:;"><i class="icon iconfont">&#xe610;</i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--比比价-->
+            <div class="shop-detail-lower-price mt1 bgf">
+                <div class="bb" style="padding-bottom:0.1rem;">
+                    <p class="shop-title">比比价</p>
+                </div>
+                <div class="col-xs-4 p0">天猫</div>
+                <div class="col-xs-4 p0">￥29.90</div>
+                <div class="col-xs-4 p0">125条评论</div>
+                <div class="clear"></div>
+                <div class="lower-price-more">
+                    <span>查看更多</span>
+                    <i class="icon iconfont">&#xe618;</i>
+                </div>
+            </div>
+            <!--好评-->
+            <div class="shop-detail-evaluate mt1 bgf">
+                <div class="p10 bb">
+                    <div class="col-xs-6 p0"><p class="shop-title">评价（651）</p></div>
+                    <div class="col-xs-6 p0">
+                        <span>好评率99%</span>
+                        <a href="#"><i class="icon iconfont">&#xe610;</i></a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="shop-evaluate-main bgf">
+                    <div class="shop-evaluate-user1 p10 bb">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-1.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">巴***6</span>
+                        </div>
+                        <p>在她家一下买了两件，都非常喜欢，而且我个人喜欢立领的衣服，喜欢的赶紧行动吧</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                        <div class="shop-show-img">
+                            <img src="../images/img/evaluate-img-1.jpg" alt=""/>
+                            <img src="../images/img/evaluate-img-2.jpg" alt=""/>
+                        </div>
+                    </div><!--shop-evaluate-user1-->
+                    <div class="shop-evaluate-user2 p10 bb">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-2.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">慧***6</span>
+                        </div>
+                        <p>宝贝挺不错的，客服推荐的码号也准确，很不错</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                    </div><!--shop-evaluate-user3-->
+                    <div class="shop-evaluate-user3 p10">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-3.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">芳***6</span>
+                        </div>
+                        <p>在她家一下买了两件，都非常喜欢，而且我个人喜欢立领的衣服，喜欢的赶紧行动吧</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                    </div><!--shop-evaluate-user3-->
+                </div>
+            </div>
+            <!--广告ads-->
+            <div class="group-detail-ad p10 bgf mt1">
+                <div class="group-detail-ad-demo">
+                    <div class="dp-imgbox">
+                        <img src="../images/img/icon-zsn.png" alt="图片加载"/>
+                    </div>
+                    <div class="ads-demo left">
+                        <div class="col-xs-9 p0">卓诗尼品牌店</div>
+                        <div class="col-xs-3 p0">
+                            <a href="#">进店逛逛<i class="icon iconfont">&#xe610;</i></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="group-detail-ad-detail ctn">
+                    <div class="col-xs-4 p0">
+                        <p class="ctn">967</p>
+                        <span>全部宝贝</span>
+                    </div>
+                    <div class="col-xs-4 p0">
+                        <p class="ctn">56.2万</p>
+                        <span>关注人数</span>
+                    </div>
+                    <div class="col-xs-4 p0 bmw">
+                        <p class="ctn">宝贝描述 <span class="cmain">4.8</span> <span class="bmw_s cmain">平</span></p>
+                        <p class="ctn">卖家服务 <span class="cmain">4.8</span> <span class="bmw_s cmain">高</span></p>
+                        <p class="ctn">物流服务 <span class="cmain">4.8</span> <span class="bmw_s cmain">高</span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--商品推荐-->
+            <div class="fq-tjsp mt1 bgf">
+                <div class="fq-wntj">为你推荐</div>
+                <div id="rfq-swiper" class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="shop-recommend-box block">
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-1.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-remai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha全是精品好好买吧</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-2.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="../fq_product">
+                                            <img src="../images/img/icon-pinpai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-3.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-4.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-5.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-6.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-shipai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop-recommend-box block">
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-1.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-remai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-2.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-pinpai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-3.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-4.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-5.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-6.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-shipai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop-recommend-box block">
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-1.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-remai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-2.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-pinpai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-3.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-4.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-5.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-6.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-shipai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="shop-recommend-box block">
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-1.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-remai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-2.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-pinpai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-3.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-4.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-5.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <!--<img src="../images/img/icon-remai.png" alt=""/>-->
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 pr5 mt1">
+                                    <div class="fq-product-imgBox ctn">
+                                        <a href="#"><img src="../images/img/rfq-6.jpg" class="img-responsive" alt="图片加载"/></a>
+                                        <div class="fq_product">
+                                            <img src="../images/img/icon-shipai.png" alt=""/>
+                                        </div>
+                                    </div>
+                                    <p class="remai_product_name bgf">【四色可选】*安琪娃高端新生hahaha</p>
+                                    <div class="remai_product_price bgf pr5">
+                                        <span>￥39.90</span>
+                                        <del>￥52.00</del>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!--添加更多-->
+            <div class="recommend-more">
+                 <span class="drag">
+                     <i class="icon iconfont">&#xe62d;</i>
+                     上拉查看图文详情
+                 </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="shop-detail-header">
+                <!--选项卡（商品详情产品参数）-->
+                <ul class="shop-detail-item">
+                    <li><a href="#shop-detail-style" class="c_main">商品介绍</a></li>
+                    <li><a href="#shop-detail-param">规格参数</a></li>
+                </ul>
+                <ul class="shop-detail-title bgf">
+                    <li></li>
+                    <li class="ctn">2016秋季新款童鞋！男女童韩版休闲鞋 学生休闲鞋</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <!--商品详情主体内容-->
+            <div class="shop-detail-main bgf">
+                <div id="shop-detail-style" class="shop-detail-style">
+                    <p class="p10">整体款式</p>
+                    <img src="../images/img/shop-detail-clip.jpg" class="img-responsive" alt="图片加载"/>
+                    <div class="shop-show p10">
+                        <img src="../images/img/shop-detail-1.jpg" class="img-responsive" alt="图片加载"/>
+                        <img src="../images/img/shop-detail-2.jpg" class="img-responsive" alt="图片加载"/>
+                        <img src="../images/img/shop-detail-4.jpg" class="img-responsive" alt="图片加载"/>
+                        <img src="../images/img/shop-detail-5.jpg" class="img-responsive" alt="图片加载"/>
+                        <img src="../images/img/shop-detail-6.jpg" class="img-responsive" alt="图片加载"/>
+                    </div>
+                    <img style="width:100%;" src="../images/img/shop-detail-7.jpg" class="img-responsive" alt="图片加载"/>
+                    <img style="width:100%;" src="../images/img/shop-detail-8.jpg" class="img-responsive" alt="图片加载"/>
+                    <div id="shop-detail-param">
+                        <img src="../images/img/shop-detail-9.jpg" class="img-responsive" alt="图片加载"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="shop-detail-evaluate-main">
+                <div class="shop-evaluate-main bgf">
+                    <div class="shop-evaluate-user1 p10 bb">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-1.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">巴***6</span>
+                        </div>
+                        <p>在她家一下买了两件，都非常喜欢，而且我个人喜欢立领的衣服，喜欢的赶紧行动吧</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                        <div class="shop-show-img">
+                            <img src="../images/img/evaluate-img-1.jpg" alt=""/>
+                            <img src="../images/img/evaluate-img-2.jpg" alt=""/>
+                        </div>
+                    </div><!--shop-evaluate-user1-->
+                    <div class="shop-evaluate-user2 p10 bb">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-2.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">慧***6</span>
+                        </div>
+                        <p>宝贝挺不错的，客服推荐的码号也准确，很不错</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                        <div class="shop-show-img">
+                            <img src="../images/img/evaluate-img-3.jpg" alt=""/>
+                        </div>
+                        <div class="add-evaluate mt1">
+                            <p>[追加评价]:  这件一穿，都说好看，自己也喜欢得不得了！</p>
+                            <div class="add-shop-show-img">
+                                <img src="../images/img/evaluate-img-4.jpg" alt=""/>
+                                <img src="../images/img/evaluate-img-5.jpg" alt=""/>
+                                <img src="../images/img/evaluate-img-6.jpg" alt=""/>
+                            </div>
+                            <div id="triangle-up"></div>
+                        </div>
+                    </div><!--shop-evaluate-user3-->
+                    <div class="shop-evaluate-user3 p10">
+                        <div class="user-portrait-name">
+                            <div class="user-portrait">
+                                <img src="../images/img/icon-user-3.jpg" alt="图片加载"/>
+                            </div>
+                            <span class="uname">芳***6</span>
+                        </div>
+                        <p>在她家一下买了两件，都非常喜欢，而且我个人喜欢立领的衣服，喜欢的赶紧行动吧</p>
+                        <p class="shop-rule-demo">
+                            <span>2016-09-08</span>
+                            <span>颜色:粉红色</span>
+                            <span>尺码:L</span>
+                        </p>
+                    </div><!--shop-evaluate-user3-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="group-index-grey">
+
+</div>
+<!--选择-->
+<div class="group-product-rule bgf">
+    <!--<div class="bb p10">-->
+        <!--<div class="col-xs-3 pr5">-->
+            <!--<div class="group-img-box">-->
+                <!--<img src="../images/img/group-img-2.jpg" class="img-responsive" alt="图片加载"/>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-xs-8 p0 group-product-demo">-->
+            <!--<p>【泡沫细致 软化角质】倩碧Clinique液体洁面皂 30ml</p>-->
+            <!--<span class="cmain">￥24.57</span><br/>-->
+            <!--<div>请选择颜色</div>-->
+        <!--</div>-->
+        <!--<div class="col-xs-1 p0 tr"><span class="off"><i class="icon iconfont">&#xe62c;</i></span></div>-->
+        <!--<div class="clear"></div>-->
+    <!--</div>-->
+    <!--<div class="group-product-color p10">-->
+        <!--<p>颜色</p>-->
+        <!--<ul class="mt5">-->
+            <!--<li class="left">泡沫洗面奶</li>-->
+            <!--<li class="left">啫喱洗面奶</li>-->
+            <!--<li class="left">氨基酸洁面皂</li>-->
+            <!--<div class="clear"></div>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="group-product-confirm p10">-->
+        <!--<button>确定</button>-->
+    <!--</div>-->
+</div>
+<!--留白div-->
+<div class="empty"></div>
+<!--操作-->
+<div class="group-operation bgf">
+    <div class="col-xs-2 ctn p0">
+        <a href="../my-center-others/my-service.html">
+            <div class="sd-chat">
+                <img src="../images/img/icon-chat.png" alt=""/>
+            </div>
+            <div class="name">私聊</div>
+        </a>
+    </div>
+    <div class="col-xs-2 ctn p0">
+        <a href="../myCart/myCart.html">
+            <div class="sd-cart">
+                <img src="../images/img/icon-cart.png" alt=""/>
+            </div>
+            <div class="name">购物车</div>
+        </a>
+    </div>
+    <div class="col-xs-4 p0">
+        <span class="add-car">加入购物车</span>
+    </div>
+    <div class="col-xs-4 p0">
+        <span class="once-buy">立即购买</span>
+    </div>
+    <div class="clear"></div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<!--<script src="js/shop-detail.js"></script>-->
+<script>
+    var rfq= new Swiper('#rfq-swiper', {
+        loop : true,
+        autoHeight: true,
+        pagination : '.swiper-pagination',
+    });
+    var sd = new Swiper('#shop-detail-swiper', {
+        autoHeight: true,
+        speed:500,
+        onSlideChangeStart: function(swiper){
+            $(".shop-detail1-header .active").removeClass('active');
+//            alert(swiper.activeIndex);
+            $(".shop-detail1-header a").eq(swiper.activeIndex).addClass('active');
+        }
+    });
+    var sdb = new Swiper('#shop-detail-banner', {
+        autoplay:1000,
+        loop : true,
+        autoHeight: true,
+        pagination : '.swiper-pagination',
+    });
+    $(function(){
+        $(".shop-detail1-header>div:first-child").on("touchstart",function(){
+            sd.slideTo(0, 0, false);
+            $(this).find("a")
+                    .addClass("active").parent().siblings()
+                    .find("a")
+                    .removeClass("active");
+        });
+        $(".drag").on("touchstart",function(){
+            sd.slideTo(1, 0, false);
+            $(".shop-detail1-header>div:nth-child(2)")
+                    .find("a")
+                    .addClass("active").parent().siblings()
+                    .find("a")
+                    .removeClass("active");
+        });
+        $(".shop-detail1-header>div:nth-child(2)").on("touchstart",function(){
+            sd.slideTo(1, 0, false);
+            $(this).find("a")
+                    .addClass("active").parent().siblings()
+                    .find("a")
+                    .removeClass("active");
+        });
+        $(".shop-detail1-header>div:nth-child(3)").on("touchstart",function(){
+            sd.slideTo(2, 0, false);
+            $(this).find("a")
+                    .addClass("active").parent().siblings()
+                    .find("a")
+                    .removeClass("active");
+        });
+        $(".shop-detail-rule").on("touchstart",function(){
+            $(".group-index-grey").show();
+        });
+        $(".add-car").on("touchstart",function(){
+            $(".group-index-grey").show();
+        });
+        $(".once-buy").on("touchstart",function(){
+            $(".group-index-grey").show();
+        });
+        $(".off").on("touchstart",function(){
+            $(".group-index-grey").hide();
+        });
+    });
+</script>
+</body>
+</html>

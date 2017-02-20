@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="youhuiquan_box">
+    <div class="youuhiquan-wsy youuhiquan-wsy2">
+        <div class="youhuiquan-content">
+            <div class="youhuiquan-miane">
+                <sup>￥</sup><span>10</span>
+            </div>
+            <div class="youhuiquan-demo">
+                <div class="youhuiquan-name">
+                    店铺优惠券
+                </div>
+                <div class="youhuiquan-detail">
+                    <span>购买1000元使用</span>
+                </div>
+                <div class="youhuiquan-youxiaoqi">
+                    使用时间:2014.11.11-2014.11.11
+                </div>
+            </div>
+            <div class="youhuiquan-btn-bg">
+                <a href="#"><img src="../images/icon-img/yhq-lijilingqu_2.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="youhuiquan_box">
+    <div class="youuhiquan-wsy youuhiquan-wsy2">
+        <div class="youhuiquan-content">
+            <div class="youhuiquan-miane">
+                <sup>￥</sup><span>10</span>
+            </div>
+            <div class="youhuiquan-demo">
+                <div class="youhuiquan-name">
+                    店铺优惠券
+                </div>
+                <div class="youhuiquan-detail">
+                    <span>购买1000元使用</span>
+                </div>
+                <div class="youhuiquan-youxiaoqi">
+                    使用时间:2014.11.11-2014.11.11
+                </div>
+            </div>
+            <div class="youhuiquan-btn-bg">
+                <a href="#"><img src="../images/icon-img/yhq-lijilingqu_2.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="youhuiquan_box">
+    <div class="youuhiquan-wsy youuhiquan-wsy2">
+        <div class="youhuiquan-content">
+            <div class="youhuiquan-miane">
+                <sup>￥</sup><span>10</span>
+            </div>
+            <div class="youhuiquan-demo">
+                <div class="youhuiquan-name">
+                    店铺优惠券
+                </div>
+                <div class="youhuiquan-detail">
+                    <span>购买1000元使用</span>
+                </div>
+                <div class="youhuiquan-youxiaoqi">
+                    使用时间:2014.11.11-2014.11.11
+                </div>
+            </div>
+            <div class="youhuiquan-btn-bg">
+                <a href="#"><img src="../images/icon-img/yhq-lijilingqu_2.png" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="addElement">
+    <a href="youhuiquan_edit.html">
+        <img src="../images/icon-img/icon_add.png" alt=""/>
+        <span>添加优惠券</span>
+    </a>
+</div>
+<div class="grey"></div>
+<div class="dialog_opration">
+    <div class="youhuiquan_opration">
+        <div class="youhuiquan_edit">编辑优惠券</div>
+        <div class="youhuiquan_del">删除优惠券</div>
+    </div>
+    <div class="youhuiquan_cancel">取消</div>
+</div>
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    $(function(){
+        var timeout;
+        var $index;
+       $(".youuhiquan-wsy").on("touchstart",function(){
+           $index = $(this).parent(".youhuiquan_box").index();
+            timeout = setTimeout(function(){
+                $(".grey").show();
+                $(".dialog_opration").show();
+            },1000);
+
+        });
+        $(".youuhiquan-wsy").on("touchend",function(){
+            clearTimeout(timeout);
+        });
+        $(".youhuiquan_cancel").on("click",function(){
+            $(".grey").hide();
+            $(".dialog_opration").hide();
+        });
+        $(".youhuiquan_edit").on("click",function(){
+            document.location = "youhuiquan_edit.html";
+        });
+        $(".youhuiquan_del").on("click",function(){
+            $(".grey").hide();
+            $(".dialog_opration").hide();
+             $(".youhuiquan_box").eq($index).remove();
+        });
+    });
+</script>
+</body>
+</html>

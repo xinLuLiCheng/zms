@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="mainshoutuijian-column-main">
+    <img src="../images/icon-img/maishoutuijian_column.png" alt=""/>
+</div>
+<div class="maishoutuijian-link" >
+    <a href="maishoutuijian.html">跳过</a>
+</div>
+<!--引入JS文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    //滚动条在Y轴上的滚动距离
+
+    function getScrollTop(){
+        var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+        if(document.body){
+            bodyScrollTop = document.body.scrollTop;
+        }
+        if(document.documentElement){
+            documentScrollTop = document.documentElement.scrollTop;
+        }
+        scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+        return scrollTop;
+    }
+    //文档的总高度
+    function getScrollHeight(){
+        var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+        if(document.body){
+            bodyScrollHeight = document.body.scrollHeight;
+        }
+        if(document.documentElement){
+            documentScrollHeight = document.documentElement.scrollHeight;
+        }
+        scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
+        return scrollHeight;
+    }
+    //浏览器视口的高度
+    function getWindowHeight(){
+        var windowHeight = 0;
+        if(document.compatMode == "CSS1Compat"){
+            windowHeight = document.documentElement.clientHeight;
+        }else{
+            windowHeight = document.body.clientHeight;
+        }
+        return windowHeight;
+    }
+    window.onscroll = function(){
+        if(getScrollTop() + getWindowHeight() == getScrollHeight()){
+            document.location = "maishoutuijian.html";
+        }
+    };
+</script>
+</body>
+</html>

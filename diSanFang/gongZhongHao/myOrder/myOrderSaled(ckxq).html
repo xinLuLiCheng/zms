@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+</head>
+<body>
+<header class="myOrder_title">
+    <div class="myOrder_name">
+        <span>订单号:</span><span>12541255625</span>
+    </div>
+    <div class="status">待确认</div>
+</header>
+<div class="myOrderSaled_detailShop">
+    <a href="#">
+        <div class="myOrder_dhxq_header">
+            <div class="imgBox">
+                <img src="../../../images/img/cart-img1.png" alt=""/>
+            </div>
+            <div class="myOrder_dhxq_shopDemo">
+                一键变形遥控汽车人 音乐变形金刚机器人充电儿童玩具玩具男孩
+            </div>
+        </div>
+    </a>
+</div>
+<div class="textTitle">
+    退款类型
+</div>
+<div class="inputBox">
+    退款退货
+</div>
+<div class="textTitle">
+    退货原因
+</div>
+<div class="inputBox">
+    七天无理由退换货
+</div>
+<div class="textTitle">
+    退货凭证
+</div>
+<div class="inputBox myOrderSaled_pinzheng clearfloat">
+    <div class="imgBox left">
+        <img src="../../../images/img/my-cart-img-1.jpg" alt=""/>
+    </div>
+    <div class="imgBox left">
+        <img src="../../../images/img/my-cart-img-2.jpg" alt=""/>
+    </div>
+    <div class="imgBox left">
+        <img src="../../../images/img/my-cart-img-3.jpg" alt=""/>
+    </div>
+</div>
+<div class="textTitle">
+    填写商家收货信息
+</div>
+<div class="twoInputBox clearfloat">
+   <div class="inputBox left">
+       <input type="text" placeholder="填写联系人姓名"/>
+   </div>
+   <div class="inputBox left">
+       <input type="text" placeholder="填写联系电话"/>
+   </div>
+</div>
+<div class="textareaBox">
+    <textarea class="textArea" name="" maxlength="100" placeholder="填写商家收货地址"></textarea>
+    <span class="textAreaNum">0/100</span>
+</div>
+<div class="myOrderSaled_btnConfirmBox">
+    <button class="btn myOrderSaled_btnConfirm">同意退款退货</button>
+</div>
+<!--引入JS文件-->
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/font.js"></script>
+<script>
+    $(function(){
+        $(".textArea").keyup(function(){
+            var $num = $(this).val().length;
+            $(".textAreaNum").text($num+"/100");
+        });
+    })
+</script>
+</body>
+</html>

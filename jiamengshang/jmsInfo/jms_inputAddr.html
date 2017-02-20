@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<div class="textTitle">
+    请输入加盟商地址
+</div>
+<div class="textareaBox">
+    <textarea class="textArea" name="" maxlength="100" placeholder=""></textarea>
+    <span class="textAreaNum">0/100</span>
+</div>
+<div class="btnSaveBox">
+    <button class="btn btnSave">保存</button>
+</div>
+<!--引入JS文件-->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/font.js"></script>
+<script>
+    $(function(){
+        $(".textArea").keyup(function(){
+            var $num = $(this).val().length;
+            $(".textAreaNum").text($num+"/100");
+        });
+    })
+</script>
+</body>
+</html>

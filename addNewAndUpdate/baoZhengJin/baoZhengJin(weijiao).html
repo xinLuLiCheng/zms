@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<div class="bodyMain">
+    <header class="baoZhengJinHeader">
+        <div class="baoZhengJinHeader_1">
+            保证金:1000.00元<span class="baoZhengJinStatus_1">（未缴纳）</span>
+        </div>
+    </header>
+    <article class="baoZhengJinRule">
+        <div>保证金制度:</div>
+        <p>
+            1.商家在本平台必须交纳商品质量和服务保证金，保证金主要用于保证商家的商品质量和服务，保证消费者权益。
+        </p>
+        <p>
+            2.商家在申请入驻获得批准时需一次性缴纳保证金，保证金现阶段统一为1000元。
+        </p>
+        <p>
+            3.平台有权根据商家的业务变化及实际违约赔付情况通知商家调整保证金金额，商家应在收到平台通知后的10天内补足保证金，如果没有及时补足保证金金额的，平台有权中止合作。
+        </p>
+        <p>
+            4.由于保证金并非平台收取的费用，所以不提供发票，敬请谅解。
+        </p>
+        <p>
+            5.商家如果要退出平台，终止合作，可以向平台提出保证金退还申请，平台审核通过后会在1个月内将保证金退回到您打款账户。商家同意该保证金不计算利息。商家退出时存在前期违约金尚未支付的情况的，平台从保证金余额中扣取。
+        </p>
+        <p>
+            6.商家有违规行为时，如根据相关规则需从保证金中支付违约金的，平台根据商家申请，按照商家实际支付金额向商家开具合法票据。开具日期为商家提交申请后的15个工作日内。
+        </p>
+    </article>
+    <div class="baoZhengJinBtnBox">
+        <button class="btn baoZhengJinBtnSubmit">立即缴费</button>
+    </div>
+    <div class="baoZhengJinImgBox">
+        <img src="../../images/icon-img/icon_baoZhengJin.png" alt=""/>
+    </div>
+</div>
+<!--引入JS文件-->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/font.js"></script>
+<script>
+    $(function(){
+        $(".baoZhengJinBtnSubmit").on("click",function(){
+            document.location = "baoZhengJin(yijiao).html";
+        });
+    });
+</script>
+</body>
+</html>

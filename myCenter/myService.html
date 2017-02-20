@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="myService_main">
+    <div class="myServiceInfo_more">
+        <span>
+            查看更多历史消息
+        </span>
+    </div>
+    <div class="myService_user clearfloat">
+        <div class="ms-user-imgBox right">
+            <img src="../images/img/fans-1.png" alt="头像加载"/>
+        </div>
+        <div class="ms-user-info right">
+            <div>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi delectus illum itaque, quibusdam repudiandae tenetur vel? Aperiam eos neque quasi qui sed? Adipisci eius illo illum molestias odit? Ex.
+            </div>
+            <div class="ms-info-tail">
+                <img src="../images/img/ms-tail.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="myService_service clearfloat">
+        <div class="ms-service-imgBox left">
+            <img src="../images/img/fans-2.png" alt="头像加载"/>
+        </div>
+        <div class="ms-service-info left">
+            <div>
+                你好啊！
+            </div>
+            <div class="ms-service-tail">
+                <img src="../images/img/searvice-tail.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="ms-record-time">
+        <span>2016-09-20 12:26</span>
+    </div>
+    <div class="myService_user clearfloat">
+        <div class="ms-user-imgBox right">
+            <img src="../images/img/fans-1.png" alt="头像加载"/>
+        </div>
+        <div class="ms-user-info right">
+            <div>
+                亲们有碰到这种情况的吗？看看大 家有好办法吗？
+            </div>
+            <div class="ms-info-tail">
+                <img src="../images/img/ms-tail.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="myService_service clearfloat">
+        <div class="ms-service-imgBox left">
+            <img src="../images/img/fans-2.png" alt="头像加载"/>
+        </div>
+        <div class="ms-service-info left">
+            <p>
+                你好啊
+            </p>
+            <div class="ms-service-tail">
+                <img src="../images/img/searvice-tail.png" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ms-send-empty"></div>
+<!--发消息框-->
+<div class="ms-send-message clearfloat">
+   <div class="ms-send-smile left">
+       <img src="../images/img/ms-select-smile.png" alt=""/>
+   </div>
+    <div class="ms-send-text left" contenteditable="true" onchange="asd()"></div>
+    <div class="ms-send-btn right">
+        发送
+    </div>
+    <div class="ms-send-add right">
+        <img src="../images/img/ms-send.png" alt=""/>
+    </div>
+</div>
+<!--引入js文件-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/font.js"></script>
+<script>
+    $(function(){
+        $(".ms-send-btn").on("touchstart",function(){
+            var $ctt = $(".ms-send-text").text();
+            if($ctt==""){
+                return false;
+            }else{
+                $(".myService_main").append(
+                        '<div class="myService_user clearfloat">' +
+                        '<div class="ms-user-imgBox right">'+
+                        '<img src="../images/img/fans-1.png" alt="头像加载"/>'+
+                        '</div>'+
+                        '<div class="ms-user-info right">'+
+                        '<div>'
+                        +$ctt+
+                        '</div>'+
+                        '<div class="ms-info-tail">'+
+                        '<img src="../images/img/ms-tail.png" alt=""/>'+
+                        '</div>'+
+                        '</div>'+
+                        '</div>'
+                );
+                $(".myService_main").append(
+                        '<div class="myService_service clearfloat">'+
+                        '<div class="ms-service-imgBox left">'+
+                        '<img src="../images/img/fans-2.png" alt="头像加载"/>'+
+                        '</div>'+
+                        '<div class="ms-service-info left p10">'+
+                        '<div>'+'很高※为你服务!很高※为你服务!很高※为你服务!很高※为你服务!很高※为你服务!'+'</div>'+
+                        '<div class="ms-service-tail">'+
+                        '<img src="../images/img/searvice-tail.png" alt=""/>'+
+                        '</div>'+
+                        '</div>'+
+                        '</div>'
+                );
+
+                $(".ms-send-text").text("");
+            }
+        });
+    });
+</script>
+</body>
+</html>

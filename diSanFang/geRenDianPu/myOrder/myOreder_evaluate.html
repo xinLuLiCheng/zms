@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--IE=edge表示强制使用IE最新内核，chrome=1表示如果安装了针对IE6/7/8等版本的浏览器插件Google Chrome -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>知妈树</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../../fonts/iconfont.css"/>
+    <link rel="stylesheet" href="../../../css/style.css"/>
+</head>
+<body>
+<div class="myOrder_evaluateMain">
+    <div class="myOrder_evaluateHeader">
+        <div class="myOrder_evaluateShop">
+            <div class="imgBox">
+                <a href="#"><img src="../../../images/img/cart-img3.png" alt=""/></a>
+            </div>
+            <div class="myOrder_evaluateXj">
+                描述相符
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="myOrder_evaluateEnjoyBox">
+            <textarea class="myOrder_evaluateEnjoy" placeholder="分享你的购买心得"></textarea>
+            <div class="evaluateEnjoy_camera">
+                <img src="../../../images/img/dsh6-pz.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="myOrder_evaluateMiddle">
+        <div class="myOrder_evaluate_sjfw">
+            商家服务
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="myOrder_evaluate_wlfw">
+            物流服务
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="myOrder_evaluate_nmpj">
+        <span class="nm_f"></span>
+        匿名评价
+    </div>
+</div>
+<div class="no-tjpj ctn">
+    提交评价
+</div>
+<div class="grey"></div>
+<div class="dialog-main">
+    <div class="dialog-pout">
+        放弃评价?
+    </div>
+    <div class="dialog-confirm clearfloat">
+        <div class="f left">否</div>
+        <div class="t left">是</div>
+    </div>
+</div>
+<!--引入JS文件-->
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/font.js"></script>
+<script type="text/javascript">
+    $(function(){
+//        $(".no-tjpj").css({background:"#ff4ca9"});
+        var msxf_num=0;
+        var sjfw_num=0;
+        var wlfw_num=0;
+        $(".myOrder_evaluateXj span").on("click",function(){
+            $(this).siblings().removeClass("pj-t");
+            $(this).prevAll().addClass("pj-t");
+            $(this).addClass("pj-t");
+            msxf_num = $(this).index()+1;
+            tj_onclick();
+        });
+        $(".myOrder_evaluate_sjfw span").on("click",function(){
+            $(this).siblings().removeClass("pj-t");
+            $(this).prevAll().addClass("pj-t");
+            $(this).addClass("pj-t");
+            sjfw_num = $(this).index()+1;
+            tj_onclick();
+        });
+        $(".myOrder_evaluate_wlfw span").on("click",function(){
+            $(this).siblings().removeClass("pj-t");
+            $(this).prevAll().addClass("pj-t");
+            $(this).addClass("pj-t");
+            wlfw_num = $(this).index()+1;
+            tj_onclick();
+        });
+        function tj_onclick(){
+            if(msxf_num>0&&sjfw_num>0&&wlfw_num>0){
+                $(".no-tjpj").css({background:"#ff4ca9"});
+            }else{
+                return false;
+            }
+        }
+        $(".nm_f").on("click",function(){
+            $(this).addClass("nm_t").removeClass("nm_f");
+            $(".dsh6-nmpj").css({color:"#ff4ca9"});
+        });
+        $(".nm_t").on("click",function(){
+            $(this).addClass("nm_f").removeClass("nm_t");
+            $(".dsh6-nmpj").css({color:"#333"});
+        });
+        $(".grey").show();
+        $(".dialog-main").show();
+        $(".grey").on("click",function(){
+            $(this).hide();
+            $(".dialog-main").hide();
+        });
+        $(".f").on("click",function(){
+            $(".grey").hide();
+            $(".dialog-main").hide();
+        });
+        $(".t").on("click",function(){
+            document.location = "daiPingJia.html";
+        })
+    });
+</script>
+</body>
+</html>
